@@ -17,15 +17,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-if node['kernel']['machine'] =~ /x86_64/
-  default['7-zip']['url']          = "http://downloads.sourceforge.net/sevenzip/7z922-x64.msi"
-  default['7-zip']['checksum']     = "f09bf515289eea45185a4cc673e3bbc18ce608c55b4cf96e77833435c9cdf3dc"
-  default['7-zip']['package_name'] = "7-Zip 9.22 (x64 edition)"
-else
-  default['7-zip']['url']          = "http://downloads.sourceforge.net/sevenzip/7z922.msi"
-  default['7-zip']['checksum']     = "86df264d22c3dd3ab80cb55a118da2d41bdd95c2db2cd09a6bbdf48f069e3d7a"
-  default['7-zip']['package_name'] = "7-Zip 9.22"
-end
-
-default['7-zip']['home']    = "#{ENV['SYSTEMDRIVE']}\\7-zip"
+# 
+# if node['kernel']['machine'] =~ /x86_64/
+#   default['7-zip']['url']          = "http://downloads.sourceforge.net/sevenzip/7z922-x64.msi"
+#   default['7-zip']['checksum']     = "f09bf515289eea45185a4cc673e3bbc18ce608c55b4cf96e77833435c9cdf3dc"
+#   default['7-zip']['package_name'] = "7-Zip 9.22 (x64 edition)"
+# else
+#   default['7-zip']['url']          = "http://downloads.sourceforge.net/sevenzip/7z922.msi"
+#   default['7-zip']['checksum']     = "86df264d22c3dd3ab80cb55a118da2d41bdd95c2db2cd09a6bbdf48f069e3d7a"
+#   default['7-zip']['package_name'] = "7-Zip 9.22"
+# end
+#
+# default['7-zip']['home']    = "#{ENV['SYSTEMDRIVE']}\\7-zip"

@@ -18,14 +18,14 @@
 # limitations under the License.
 #
 
-windows_package node['7-zip']['package_name'] do
-  source node['7-zip']['url']
-  checksum node['7-zip']['checksum']
-  options "INSTALLDIR=\"#{node['7-zip']['home']}\""
-  action :install
-end
-
-# update path
-windows_path node['7-zip']['home'] do
-  action :add
-end
+# windows_package node['7-zip']['package_name'] do
+#   source node['7-zip']['url']
+#   checksum node['7-zip']['checksum']
+#   options "INSTALLDIR=\"#{node['7-zip']['home']}\""
+#   action :install
+# end
+#
+# # update path
+# windows_path node['7-zip']['home'] do
+#   action :add
+# end
